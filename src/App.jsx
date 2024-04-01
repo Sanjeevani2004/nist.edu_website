@@ -6,11 +6,15 @@ import AboutPage from './components/AboutPage/AboutPage';
 import ProgramsPage from './components/ProgramsPage/ProgramsPage';
 import EventsPage from './components/EventsPage/EventsPage';
 import ContactPage from './components/ContactPage/ContactPage';
+// import Navbar from './components/Navigation/Navigation.jsx';
+import Footer from "./components/Footer/Footer.tsx";
 
 function App() {
   return (
     <BrowserRouter>
+
       <Header />
+      
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -18,7 +22,9 @@ function App() {
         <Route path="/events" element={<EventsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
+     
   );
 }
 
