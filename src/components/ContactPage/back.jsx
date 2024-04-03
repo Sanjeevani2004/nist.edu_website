@@ -7,8 +7,8 @@ const Back = ({ title }) => {
   return (
     <>
       <section className='back'>
-        <h2></h2>
-        <h1></h1>
+        <h2>  </h2>
+        <h1>   </h1>
       </section>
       <div className='margin'></div>
     </>
