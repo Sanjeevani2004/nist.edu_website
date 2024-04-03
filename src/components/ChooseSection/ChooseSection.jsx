@@ -5,7 +5,7 @@ function ChooseSection() {
   return (
     <div>
         <div className="container">
-            <h2 className='text-center mb-5'>Why choose React University ?</h2>
+            <h2 className='text-center mb-5'>Why choose NIST University ?</h2>
             <div className='row g-4'>
                 <div className='col-lg-4'>
                     <Card className='d-flex align-items-center border-0 h-100'>
@@ -16,10 +16,10 @@ function ChooseSection() {
                         </div>
                         <Card.Body>
                             <Card.Title className='text-center text-capitalize mb-3'>
-                                2 trophies received
+                                TOP UNIVERSITY IN EASTERN INDIA
                             </Card.Title>
                             <Card.Text className='text-center'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum qui facilis perspiciatis, ab pariatur! Eaque maxime ratione illum distinctio?
+                            1st rank to NIST among all Engineering Colleges in EASTERN INDIA by DATAQUEST 2017
                             </Card.Text>
                         </Card.Body>
                     </Card>
