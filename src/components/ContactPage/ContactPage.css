@@ -4,6 +4,9 @@
     border: none;
     background-image: '/images.jpeg';
   }
+  .body{
+    background-color: blue;
+  }
   .contacts .right {
     padding: 50px;
   }

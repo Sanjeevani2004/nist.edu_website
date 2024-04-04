@@ -1,5 +1,6 @@
 import React from 'react';
 import './Homepage.css';
+import ContactPage from '../ContactPage/ContactPage.jsx'
 import { Link } from 'react-router-dom';
 import ChooseSection from '../../components/Header/Header';
 import StartCoursesImg from './nist.png';
@@ -47,8 +48,10 @@ function Home() {
 
         <div className="py-5">
             <FaqAccordion />
+            <br />
+            <ContactPage />
         </div>
-
+        
     </div>
   )
 }

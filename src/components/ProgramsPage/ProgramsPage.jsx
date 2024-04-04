@@ -15,7 +15,7 @@ const courses = [
     {
         id: 1,
         img: [ArtCourseImg],
-        title: 'Art Course',
+        title: 'Engineering Course',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odio eos distinctio ducimus! Modi quaerat dolores illo accusamus maxime cupiditate culpa minus animi repellat autem!'
     },
     {
@@ -27,13 +27,13 @@ const courses = [
     {
         id: 3,
         img: [ComputerScienceCourseImg],
-        title: 'Computer Science Course',
+        title: 'Science Course',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odio eos distinctio ducimus! Modi quaerat dolores illo accusamus maxime cupiditate culpa minus animi repellat autem!'
     },
     {
         id: 4,
         img: [EducationCourseImg],
-        title: 'Education Course',
+        title: 'Skill Development Course',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odio eos distinctio ducimus! Modi quaerat dolores illo accusamus maxime cupiditate culpa minus animi repellat autem!'
     },
     {

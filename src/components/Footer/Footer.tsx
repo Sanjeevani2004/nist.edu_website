@@ -89,7 +89,8 @@ const Footer = () => {
                   <a
                     key={index}
                     className="btn btn-outline-light btn-social"
-                    href=""
+                    href={social.link}
+                    target='_blank'
                   >
                     {React.createElement(social.icon, {
                       className: 'display-1',
