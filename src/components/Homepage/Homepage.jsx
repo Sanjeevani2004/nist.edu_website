@@ -5,8 +5,10 @@ import ChooseSection from '../../components/ChooseSection/ChooseSection';
 import StartCoursesImg from './nist.png';
 import ContactPage from '../../components/ContactPage/ContactPage';
 import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
-import BgVideo from '../../utils/nist.mp4';
+import BgVideo from '../../utils/IMG_7472.MOV';
+import NVideo from '../../utils/1.png';
 import { Container, Row, Col } from 'react-bootstrap';
+
 
 function Home() {
   return (
@@ -21,21 +23,20 @@ function Home() {
             className="video-bg"
             style={{
               position: 'absolute',
-              width: '100%',
-              height: '99%',
+              width: '80%',
+              height: '100%',
               objectFit: 'cover',
               zIndex: -1,
-              marginTop:'-230px'
+              marginTop:'-110px',
+              marginBottom: '0px'
             }}
           />
           <div className="bg-overlay"></div>
-          <h2>Welcome To</h2>
-          <h1 className="text-center fw-semibold">NIST University</h1>
+          <img src={NVideo} alt="nist logo" />
+          
+          <h1 className="text-center fw-semibold">We prepare diverse, talented and ambitious students to learn, <br /> lead and embody excellence in truth and service.</h1>
           <p>
-            Our cutting-edge curriculum is designed to empower students with the
-            <br />
-            knowledge, skills, and experiences needed to excel in the dynamic field of
-            education
+          
           </p>
           <div className="d-flex flex-column flex-sm-row align-items-center">
             <Link to="/courses">
