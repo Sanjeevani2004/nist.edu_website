@@ -6,15 +6,16 @@ import {
   FaLinkedin,
   FaTwitter,
   FaYoutube,
+  FaInstagram
 } from 'react-icons/fa';
 
 const Footer = () => {
   const companyLinks = [
     { label: 'About Us', icon: FaRegArrowAltCircleRight, Link: 'about' },
     { label: 'Contact Us', icon: FaRegArrowAltCircleRight, Link: 'contact' },
-    { label: 'Reservation', icon: FaRegArrowAltCircleRight, Link: 'contact' },
-    { label: 'Privacy Policy', icon: FaRegArrowAltCircleRight, Link: '' },
-    { label: 'Terms & Condition', icon: FaRegArrowAltCircleRight, Link: '' },
+    { label: 'Courses', icon: FaRegArrowAltCircleRight, Link: 'course' },
+    { label: 'Privacy Policy', icon: FaRegArrowAltCircleRight, Link: 'privacy' },
+    { label: 'FAQs', icon: FaRegArrowAltCircleRight, Link: 'faq' },
   ];
 
   const contactInfo = [
@@ -44,11 +45,17 @@ const Footer = () => {
         link: 'https://www.linkedin.com/school/nistuniversity/',
         scale: 1.3,
       },
+      {
+        icon: FaInstagram,
+        link: 'https://www.instagram.com/nistuniversity',
+        scale: 1.3,
+      }
   ];
 
   const openingHours = [
-    { day: 'Monday - Saturday', time: '09AM - 09PM' },
-    { day: 'Sunday', time: '10AM - 08PM' },
+    { day: 'BTECH-', time: 'CSE, IT, ECE' },
+    { day: 'BSC-', time: 'CS,IT,PHY,CHEM' },
+    { day: 'BUSINESS-', time: 'MBA' },
   ];
 
   return (
@@ -61,7 +68,7 @@ const Footer = () => {
           <div className="row g-5">
             <div className="col-lg-3 col-md-6">
               <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                Company
+                Quick Links
               </h4>
               {companyLinks.map((link, index) => (
                 <a
@@ -102,7 +109,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                Opening
+                Courses
               </h4>
               {openingHours.map((hours, index) => (
                 <React.Fragment key={index}>
@@ -149,10 +156,9 @@ const Footer = () => {
               </div>
               <div className="col-md-6 text-center text-md-end">
                 <div className="footer-menu">
-                  <a href="src\components\Homepage\Homepage.js">Home</a>
-                  <a href="">Cookies</a>
-                  <a href="">Help</a>
-                  <a href="">FQAs</a>
+                  <a href="#">Home</a>
+                  <a href="/contact">Help</a>
+                  <a href="faq">FAQs</a>
                 </div>
               </div>
             </div>

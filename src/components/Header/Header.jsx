@@ -9,7 +9,7 @@ function Header() {
         {/* <img src="/nba1.png" alt="NBA Logo" /> */}
         <div>
           <h1 className="title">NIST University</h1>
-          <h2 className="subTitle">Berhampur, Odisha</h2>
+          {/* <h2 className="subTitle">Berhampur, Odisha</h2> */}
         </div>
       </div>
       <nav>

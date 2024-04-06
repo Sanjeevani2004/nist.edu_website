@@ -6,19 +6,24 @@ import AboutPage from './components/AboutPage/AboutPage.jsx';
 import ProgramsPage from './components/ProgramsPage/ProgramsPage';
 import EventsPage from './components/EventsPage/EventsPage';
 import ContactPage from './components/ContactPage/ContactPage';
-import Footer from "./components/Footer/Footer.tsx";
+import Footer from './components/Footer/Footer.tsx';
+import Faq from './components/FaqAccordion/FaqAccordion.jsx';
+import privacy from './components/Footer/Privacy.jsx';
 
 function App() {
   return (
+    
     <BrowserRouter>
-
-    <Header />
+    <Header/>
       <Routes>
+      
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/course" element={<ProgramsPage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/privacy" element={<privacy />} />
       </Routes>
       <Footer />
     </BrowserRouter>

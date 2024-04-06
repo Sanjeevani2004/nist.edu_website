@@ -9,7 +9,6 @@ import BgVideo from '../../utils/IMG_7472.MOV';
 import NVideo from '../../utils/1.png';
 import { Container, Row, Col } from 'react-bootstrap';
 
-
 function Home() {
   return (
     <div className="home-page">
@@ -23,12 +22,11 @@ function Home() {
             className="video-bg"
             style={{
               position: 'absolute',
-              width: '80%',
-              height: '100%',
+              width: '100%',
+              height: '102%',
               objectFit: 'cover',
               zIndex: -1,
-              marginTop:'-110px',
-              marginBottom: '0px'
+              marginTop:'-100px',
             }}
           />
           <div className="bg-overlay"></div>
@@ -39,7 +37,7 @@ function Home() {
           
           </p>
           <div className="d-flex flex-column flex-sm-row align-items-center">
-            <Link to="/courses">
+            <Link to="/course">
               <button
                 type="button"
                 className="btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0"
