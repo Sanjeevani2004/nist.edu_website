@@ -7,32 +7,27 @@ function FaqAccordion() {
     <div className='faq-section'>
         <div className='container d-flex flex-column align-items-center'>
             <h2 className='text-center text-capitalize mb-5'>Frequently asked questions</h2>
-            <p className='text-center mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat numquam rem expedita similique necessitatibus dolore magnam natus sit ipsa, quae neque accusantium placeat laudantium mollitia, reprehenderit alias incidunt, delectus obcaecati cupiditate sed omnis repudiandae eos! Quasi unde veritatis labore quibusdam.</p>
+            <p className='text-center mb-5'>We're here to help! You can reach our dedicated customer support team by sending an email to hell or by filling out the contact form on our website. We strive to respond to all inquiries within 24 hours during weekdays. Additionally, you can reach out to us via our social media channels present in the end of the page. We're committed to ensuring your experience with us is smooth and enjoyable, so don't hesitate to get in touch with any questions or concerns you may have..</p>
             <Accordion defaultActiveKey="" flush>
                 <Accordion.Item eventKey='0'>
-                    <Accordion.Header>First question ?</Accordion.Header>
+                    <Accordion.Header>Where is NIST UNIVERSITY located?</Accordion.Header>
                     <Accordion.Body>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab deserunt eaque nostrum voluptate, facilis ratione quo ducimus quod qui eius nobis quam temporibus similique fugit? Molestias, illo, maxime nulla aliquid ut pariatur corrupti aspernatur dolor assumenda quos officia eos?
+                        NIST UNIVERSITY is located at Institute Park, Berhampur,Odisha-761008, India.
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey='1'>
-                    <Accordion.Header>Second question ?</Accordion.Header>
+                    <Accordion.Header>What are the courses available?</Accordion.Header>
                     <Accordion.Body>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab deserunt eaque nostrum voluptate, facilis ratione quo ducimus quod qui eius nobis quam temporibus similique fugit? Molestias, illo, maxime nulla aliquid ut pariatur corrupti aspernatur dolor assumenda quos officia eos?
+                       We Offer BTech, BsC, MBA & Skill Development Courses.
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey='2'>
-                    <Accordion.Header>Third question ?</Accordion.Header>
+                    <Accordion.Header>What is the Admission Process?</Accordion.Header>
                     <Accordion.Body>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab deserunt eaque nostrum voluptate, facilis ratione quo ducimus quod qui eius nobis quam temporibus similique fugit? Molestias, illo, maxime nulla aliquid ut pariatur corrupti aspernatur dolor assumenda quos officia eos?
+                        For the Admission Process Please reach out at Contact Page.
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey='3'>
-                    <Accordion.Header>Fourth question ?</Accordion.Header>
-                    <Accordion.Body>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab deserunt eaque nostrum voluptate, facilis ratione quo ducimus quod qui eius nobis quam temporibus similique fugit? Molestias, illo, maxime nulla aliquid ut pariatur corrupti aspernatur dolor assumenda quos officia eos?
-                    </Accordion.Body>
-                </Accordion.Item>
+                
             </Accordion>
         </div>
     </div>

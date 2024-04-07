@@ -7,7 +7,7 @@ import ContactPage from '../../components/ContactPage/ContactPage';
 import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
 import BgVideo from '../../utils/IMG_7472.MOV';
 import NVideo from '../../utils/1.png';
-import Login from '../LoginPage/Login.page'
+//import Login from '../LoginPage/Login.page'
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Home() {
@@ -68,8 +68,7 @@ function Home() {
             <Col lg={5}>
               <h2 className="text-capitalize">2024 start courses</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-                placeat.
+              Our courses cover a wide range of topics, from business and technology to Bsc and personal development. Each course is crafted by industry experts and educators who are passionate about sharing their knowledge and expertise with you.
               </p>
               <Link to="/courses">
                 <button
@@ -91,7 +90,6 @@ function Home() {
         <FaqAccordion />
         <br />
         <ContactPage />
-        <Login />
       </div>
     </div>
   );

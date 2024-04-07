@@ -156,7 +156,7 @@ const Footer = () => {
               </div>
               <div className="col-md-6 text-center text-md-end">
                 <div className="footer-menu">
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                   <a href="/contact">Help</a>
                   <a href="faq">FAQs</a>
                 </div>
