@@ -7,7 +7,7 @@ import ContactPage from '../../components/ContactPage/ContactPage';
 import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
 import BgVideo from '../../utils/IMG_7472.MOV';
 import NVideo from '../../utils/1.png';
-import Login from '../LoginPage/Login.page'
+import Login from '../LoginPage/Login'
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Home() {
@@ -92,6 +92,7 @@ function Home() {
         <Login />
         <ContactPage />
       </div>
+    </div>
     </div>
   );
 }

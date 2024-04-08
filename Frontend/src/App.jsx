@@ -9,10 +9,10 @@ import ContactPage from './components/ContactPage/ContactPage';
 import Footer from './components/Footer/Footer.tsx';
 import Faq from './components/FaqAccordion/FaqAccordion.jsx';
 import privacy from './components/Footer/Privacy.jsx';
-import { UserProvider } from "./Context/user.context.js";
-import Login from "./components/LoginPage/Login.page";
+import { UserProvider } from "./Context/context.js";
+import Login from "./components/LoginPage/Login";
 //import PrivateRoute from "./components/LoginPage/PrivateRoute.page";
-import Signup from "./components/LoginPage/Signup.page";
+import Signup from "./components/LoginPage/Signup";
 
 function App() {
   return (

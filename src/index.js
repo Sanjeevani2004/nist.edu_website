@@ -1,6 +1,15 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { ThemeProvider } from "@material-tailwind/react";
+
+
+const root= ReactDOM.render(<App />, document.getElementById('root'));
+
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+   ;
