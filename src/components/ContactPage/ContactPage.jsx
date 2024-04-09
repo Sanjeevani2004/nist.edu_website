@@ -17,6 +17,8 @@ function Contact() {
     message: ''
   });
 
+  const [submitted, setSubmitted] = useState(false); // New state for submission status
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -35,6 +37,7 @@ function Contact() {
           postcode: '',
           message: ''
         });
+        setSubmitted(true); // Set submission status to true
       })
       .catch((error) => {
         console.error('Email failed to send:', error.text);
@@ -55,17 +58,17 @@ function Contact() {
                 <Row className='mb-3'>
                     <Col sm={12} md={6} className='mb-3 mb-md-0'>
                         <Form.Label>First Name</Form.Label>
-                        <Form.Control name='firstName' placeholder='First name' onChange={handleChange} />
+                        <Form.Control name='firstName' placeholder='First name' value={formData.firstName} onChange={handleChange} />
                     </Col>
                     <Col sm={12} md={6}>
                         <Form.Label>Last Name</Form.Label>
-                        <Form.Control name='lastName' placeholder='Last name' onChange={handleChange} />
+                        <Form.Control name='lastName' placeholder='Last name' value={formData.lastName} onChange={handleChange} />
                     </Col>
                 </Row>
 
                 <Form.Group className='mb-3'>
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type='email' name='email' placeholder='Enter email' onChange={handleChange} />
+                    <Form.Control type='email' name='email' placeholder='Enter email' value={formData.email} onChange={handleChange} />
                     <Form.Text className='text-muted'>
                         We'll never share your email with anyone else.
                     </Form.Text>
@@ -73,26 +76,28 @@ function Contact() {
 
                 <Form.Group className='mb-3'>
                     <Form.Label>Address</Form.Label>
-                    <Form.Control name='address' placeholder='Your address' onChange={handleChange} />
+                    <Form.Control name='address' placeholder='Your address' value={formData.address} onChange={handleChange} />
                 </Form.Group>
                 <Form.Group className='mb-3'>
                     <Form.Label>State</Form.Label>
-                    <Form.Control name='state' placeholder='State' onChange={handleChange} />
+                    <Form.Control name='state' placeholder='State' value={formData.state} onChange={handleChange} />
                 </Form.Group>
 
                 <Row className='mb-3'>
                     <Col sm={12} md={6}>
                         <Form.Label>Postcode</Form.Label>
-                        <Form.Control name='postcode' placeholder='Postcode' onChange={handleChange} />
+                        <Form.Control name='postcode' placeholder='Postcode' value={formData.postcode} onChange={handleChange} />
                     </Col>
                 </Row>
 
                 <Form.Group className='mb-3'>
                     <Form.Label>Your Message</Form.Label>
-                    <Form.Control name='message' as="textarea" rows={3} onChange={handleChange} />
+                    <Form.Control name='message' as="textarea" rows={3} value={formData.message} onChange={handleChange} />
                 </Form.Group>
 
                 <Button variant="danger btn-lg" type='submit'>Submit</Button>
+
+                {submitted && <p className="text-success mt-3">Form submitted successfully!</p>} {/* Display submitted message */}
             </Form>
         </div>
     </div>

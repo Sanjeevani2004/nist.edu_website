@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import logo from './nistop.svg';
+import logo from './nist.png';
 
 const Navigation = () => {
     const [showMenu, setShowMenu] = useState(false); // State to manage the visibility of the navigation links
@@ -14,7 +14,7 @@ const Navigation = () => {
         <div>
             <nav className="flex items-center justify-between flex-wrap bg-slate-950 p-3">
                 <div className="flex items-center flex-shrink-0 text-white mr-16">
-                    <img src={logo} className="fill-current colour-white h-20 w-20 mr-4" alt="NIST University Logo" />
+                    <img src={logo} className="fill-current colour-white h-20 w-30 mr-4" alt="NIST University Logo" />
                     <span className="font-semibold font-['Open_Sans'] tracking-normal text-3xl tracking-tight mr-10">NIST University</span>
                 </div>
                 <div className="block lg:hidden">
