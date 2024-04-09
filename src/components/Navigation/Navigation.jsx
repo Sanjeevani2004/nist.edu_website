@@ -36,6 +36,9 @@ const Navigation = () => {
                         <a href="/courses" className="block text-lg mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-8">
                             Courses
                         </a>
+                        {/* <a href="/events" className="block text-lg mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-8">
+                            Events
+                        </a> */}
                         <a href="/contact" className="block text-lg mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
                             Contact Us
                         </a>

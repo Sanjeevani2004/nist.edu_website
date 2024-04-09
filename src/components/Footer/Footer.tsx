@@ -6,7 +6,8 @@ import {
   FaLinkedin,
   FaTwitter,
   FaYoutube,
-  FaInstagram
+  FaInstagram,
+  FaWhatsapp
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -33,6 +34,11 @@ const Footer = () => {
     {
        icon: FaFacebookF,
        link: 'https://www.facebook.com/NISTUniversity', 
+       scale: 1.3 
+      },
+    {
+       icon: FaWhatsapp,
+       link: 'https://api.whatsapp.com/send?phone=919777146478&text=Hi!%20I%20wish%20to%20ask%20you%20some%20questions%20regarding%20NIST,%20Berhampur.', 
        scale: 1.3 
       },
     {

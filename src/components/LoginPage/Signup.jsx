@@ -27,11 +27,11 @@ const Register = () => {
         <>
             {userLoggedIn && (<Navigate to={'/'} replace={true} />)}
 
-            <main className="w-full h-screen flex self-center place-content-center place-items-center">
-                <div className="w-96 text-gray-600 space-y-5 p-4 shadow-xl border rounded-xl">
+            <main className="w-full h-screen flex self-center place-content-center place-items-center bg-black">
+                <div className="w-96 text-gray-800 space-y-5 p-4 shadow-xl border rounded-xl">
                     <div className="text-center mb-6">
                         <div className="mt-2">
-                            <h3 className="text-gray-800 text-xl font-semibold sm:text-2xl">Create a New Account</h3>
+                            <h3 className="text-gray-400 text-xl font-semibold sm:text-2xl">Create a New Account</h3>
                         </div>
 
                     </div>
@@ -40,7 +40,7 @@ const Register = () => {
                         className="space-y-4"
                     >
                         <div>
-                            <label className="text-sm text-gray-600 font-bold">
+                            <label className="text-sm text-gray-400 font-bold">
                                 Email
                             </label>
                             <input
@@ -53,7 +53,7 @@ const Register = () => {
                         </div>
 
                         <div>
-                            <label className="text-sm text-gray-600 font-bold">
+                            <label className="text-sm text-gray-400 font-bold">
                                 Password
                             </label>
                             <input
@@ -67,7 +67,7 @@ const Register = () => {
                         </div>
 
                         <div>
-                            <label className="text-sm text-gray-600 font-bold">
+                            <label className="text-sm text-gray-400 font-bold">
                                 Confirm Password
                             </label>
                             <input
@@ -91,7 +91,7 @@ const Register = () => {
                         >
                             {isRegistering ? 'Signing Up...' : 'Sign Up'}
                         </button>
-                        <div className="text-sm text-center">
+                        <div className="text-sm text-center text-gray-400">
                             Already have an account? {'   '}
                             <Link to={'/login'} className="text-center text-sm hover:underline font-bold">Continue</Link>
                         </div>

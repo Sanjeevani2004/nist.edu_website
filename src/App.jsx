@@ -21,7 +21,9 @@ function App() {
     
     <BrowserRouter>
     <AuthProvider>
+    {/* <Parallax speed={-10}> */}
       <Header/>
+
       <Header1/>
         <Routes>
       
@@ -39,6 +41,7 @@ function App() {
      
   );
       <Footer />
+      {/* </Parallax> */}
       </AuthProvider>
     </BrowserRouter>
 

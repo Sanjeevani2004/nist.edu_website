@@ -34,11 +34,11 @@ const Login = () => {
         <div>
             {userLoggedIn && (<Navigate to={'/faculty'} replace={true} />)}
 
-            <main className="w-full h-screen flex self-center place-content-center place-items-center">
+            <main className="w-full h-screen flex self-center place-content-center place-items-center bg-black">
                 <div className="w-96 text-gray-600 space-y-5 p-4 shadow-xl border rounded-xl">
                     <div className="text-center">
                         <div className="mt-2">
-                            <h3 className="text-gray-800 text-xl font-semibold sm:text-2xl">Welcome Back</h3>
+                            <h3 className="text-gray-400 text-xl font-semibold sm:text-2xl">Welcome Back</h3>
                         </div>
                     </div>
                     <form
@@ -46,7 +46,7 @@ const Login = () => {
                         className="space-y-5"
                     >
                         <div>
-                            <label className="text-sm text-gray-600 font-bold">
+                            <label className="text-sm text-gray-400 font-bold">
                                 Email
                             </label>
                             <input
@@ -60,7 +60,7 @@ const Login = () => {
 
 
                         <div>
-                            <label className="text-sm text-gray-600 font-bold">
+                            <label className="text-sm text-gray-400 font-bold">
                                 Password
                             </label>
                             <input
@@ -84,7 +84,7 @@ const Login = () => {
                             {isSigningIn ? 'Signing In...' : 'Sign In'}
                         </button>
                     </form>
-                    <p className="text-center text-sm">Don't have an account? <Link to={'/register'} className="hover:underline font-bold">Sign up</Link></p>
+                    <p className="text-center text-gray-400text-sm">Don't have an account? <Link to={'/register'} className="hover:underline font-bold">Sign up</Link></p>
                     <div className='flex flex-row text-center w-full'>
                         <div className='border-b-2 mb-2.5 mr-2 w-full'></div><div className='text-sm font-bold w-fit'>OR</div><div className='border-b-2 mb-2.5 ml-2 w-full'></div>
                     </div>

@@ -21,22 +21,18 @@ header {
   background-position: center;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .home-page header {
-    /* Adjust styles for smaller screens */
     background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75));; /* Remove background image on smaller screens */
   }
   
   .home-page h-100 {
-    /* Adjust styles for smaller screens */
     background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75));; /* Remove background image on smaller screens */
   }
   
   .home-page video-bg {
-    /* Adjust styles for smaller screens */
-    width: 100%; /* Ensure video width spans the full width */
-    height: auto; /* Make video height auto to maintain aspect ratio */
+    width: 100%; 
+    height: auto;
   }
   
   header {
