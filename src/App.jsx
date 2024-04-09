@@ -16,6 +16,7 @@ import Login from "./components/LoginPage/Login.jsx";
 import Signup from "./components/LoginPage/Signup.jsx";
 import Faculty from './components/LoginPage/faculty.jsx';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
     <BrowserRouter>
     <AuthProvider>
     <Analytics />
+    <SpeedInsights/>
       <Header/>
       <Header1/>
         <Routes>
