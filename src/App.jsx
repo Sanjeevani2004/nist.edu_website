@@ -15,12 +15,14 @@ import { AuthProvider } from "./Context/authContext/context.jsx";
 import Login from "./components/LoginPage/Login.jsx";
 import Signup from "./components/LoginPage/Signup.jsx";
 import Faculty from './components/LoginPage/faculty.jsx';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
     
     <BrowserRouter>
     <AuthProvider>
+    <Analytics />
       <Header/>
       <Header1/>
         <Routes>
