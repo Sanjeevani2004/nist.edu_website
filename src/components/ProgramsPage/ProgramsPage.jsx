@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProgramsPage.css';
 import { Card } from 'react-bootstrap';
-import ArtCourseImg from '../../utils/images/art-course.jpg';
+//import ArtCourseImg from '../../utils/images/art-course.jpg';
 import BusinessCourseImg from '../../utils/images/business-course.jpg';
 import ComputerScienceCourseImg from '../../utils/images/computer-science-course.jpg';
 import EducationCourseImg from '../../utils/images/education-course.jpg';

@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import logo from './nist.png';
 
 const Navigation = () => {
-    const [showMenu, setShowMenu] = useState(false); // State to manage the visibility of the navigation links
+    const [showMenu, setShowMenu] = useState(false);
     const navigate = useNavigate();
 
     const toggleMenu = () => {
-        setShowMenu(!showMenu); // Toggle the state when the button is clicked
+        setShowMenu(!showMenu); 
     };
 
     return (

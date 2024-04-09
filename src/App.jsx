@@ -21,12 +21,9 @@ function App() {
     
     <BrowserRouter>
     <AuthProvider>
-    {/* <Parallax speed={-10}> */}
       <Header/>
-
       <Header1/>
         <Routes>
-      
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/courses" element={<ProgramsPage />} />
@@ -38,10 +35,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/faculty" element={<Faculty />} />
       </Routes>
-     
-  );
       <Footer />
-      {/* </Parallax> */}
       </AuthProvider>
     </BrowserRouter>
 
