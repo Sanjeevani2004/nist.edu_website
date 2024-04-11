@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutPage.css';
 import { Link } from 'react-router-dom';
+import AnimatedPage from '../animation.jsx';
 import AboutUsSectionImg from '../../Assets/tifac.jpg';
 import ChooseSection from '../ChooseSection/ChooseSection.jsx';
 import Person1 from '../../utils/images/LHC.png';
@@ -55,6 +56,7 @@ const persons = [
 
 function About() {
     return (
+        <AnimatedPage>
       <div className='about-page'>
           <header className='height-75'>
               <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
@@ -91,16 +93,18 @@ function About() {
             <div className="container bg-black">
                 <h2 className='text-center text-white mb-5'>Our Campus</h2>
                 <div className='row g-4'>
-                    {persons.map((person) => (
+                    {
+                    persons.map((person) => (
                         <div key={person.id} className='col-md-4'>
                             <img src={person.img} className='img-fluid' alt="" />
-                            <p className="text-center text-white mt-2">{person.id}</p>
+                            <p className="text-center text-white mt-4">{person.id}</p>
                         </div>
                     ))}
                 </div>
             </div>
         </div>
     </div>
+    </AnimatedPage>
   )
 }
 

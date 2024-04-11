@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-
+import AnimatedPage from '../animation';
 function ChooseSection() {
     return (
+        <AnimatedPage>
         <div style={{ backgroundImage: 'url(image.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="container">
                 <h2 className='text-center mb-5'>Why choose NIST University ?</h2>
@@ -59,6 +60,7 @@ function ChooseSection() {
                 </div>
             </div>
         </div>
+    </AnimatedPage>
     );
 }
 

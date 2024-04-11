@@ -10,6 +10,7 @@ import NVideo from './University.png';
 //import Login from '../LoginPage/Login.page'
 import { Container, Row, Col } from 'react-bootstrap';
 
+
 function Home() {
   return (
     <div className="home-page">
@@ -34,9 +35,6 @@ function Home() {
           <img src={NVideo} alt="nist logo" />
           
           <h1 className="text-center fw-semibold">We prepare diverse, talented and ambitious students to learn, <br /> lead and embody excellence in truth and service.</h1>
-          <p>
-          
-          </p>
           <div className="d-flex flex-column flex-sm-row align-items-center">
             <Link to="/course">
               <button

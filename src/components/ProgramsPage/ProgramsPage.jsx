@@ -1,13 +1,13 @@
 import React from 'react';
 import './ProgramsPage.css';
 import { Card } from 'react-bootstrap';
-//import ArtCourseImg from '../../utils/images/art-course.jpg';
 import BusinessCourseImg from '../../utils/images/business-course.jpg';
 import ComputerScienceCourseImg from '../../utils/images/computer-science-course.jpg';
 import EducationCourseImg from '../../utils/images/education-course.jpg';
 import HealthcareCourseImg from '../../utils/images/healthcare-course.jpg';
 import LawCourseImg from '../../utils/images/law-course.jpg';
 import FaqAccordion from '../FaqAccordion/FaqAccordion';
+import AnimatedPage from '../animation';
 
 const courses = [
     {
@@ -36,13 +36,13 @@ const courses = [
     },
     {
         id: 5,
-        img: [HealthcareCourseImg],
+        img: [ComputerScienceCourseImg],
         title: 'MTech Course',
         description: 'NIST started offering M.Tech programs since 2003. Ever since NIST has been reveling in a culture of learning by doing. Offered in six disciplines, the courses focus on analytical rigor, imagination and problem solving skill of highest order. The institution teaches how to tackle global challenges in the most precise scientific way. Known as the best engineering college for M.Tech courses in Odisha, NIST has pioneered teaching and learning in the campus and across the globe through its academic-industry liaisons and various research projects.'
     },
     {
         id: 6,
-        img: [LawCourseImg],
+        img: [HealthcareCourseImg],
         title: 'Phd',
         description: 'Ph.D is a doctoral program and the highest degree conferred by a university or institution of that capacity after completion of a thesis offering a significant new contribution to knowledge in the subject. And in Eastern India, NIST has been the institute of choice for research enthusiasts.'
     },
@@ -51,6 +51,7 @@ const courses = [
 
 function Courses() {
   return (
+    <AnimatedPage>
     <div className='courses-page'>
         <header className='height-75'>
             <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
@@ -79,6 +80,7 @@ function Courses() {
             <FaqAccordion />
         </div>
     </div>
+    </AnimatedPage>
   )
 }
 

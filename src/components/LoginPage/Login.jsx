@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Navigate, Link } from 'react-router-dom'
 import { doSignInWithEmailAndPassword, doSignInWithGoogle } from '../../firebase/auth'
 import { useAuth } from '../../Context/authContext/context'
+import AnimatedPage from '../animation'
 
 const Login = () => {
     const { userLoggedIn } = useAuth()
@@ -31,6 +32,7 @@ const Login = () => {
     }
 
     return (
+        <AnimatedPage>
         <div>
             {userLoggedIn && (<Navigate to={'/faculty'} replace={true} />)}
 
@@ -110,6 +112,7 @@ const Login = () => {
                 </div>
             </main>
         </div>
+        </AnimatedPage>
     )
 }
 

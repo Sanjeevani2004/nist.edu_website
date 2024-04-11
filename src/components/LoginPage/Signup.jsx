@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Navigate, Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../Context/authContext/context'
 import { doCreateUserWithEmailAndPassword } from '../../firebase/auth'
+import AnimatedPage from '../animation'
 
 const Register = () => {
 
@@ -24,8 +25,9 @@ const Register = () => {
     }
 
     return (
+        <AnimatedPage>
         <>
-            {userLoggedIn && (<Navigate to={'/'} replace={true} />)}
+            {userLoggedIn && (<Navigate to={'/faculty'} replace={true} />)}
 
             <main className="w-full h-screen flex self-center place-content-center place-items-center bg-black">
                 <div className="w-96 text-gray-800 space-y-5 p-4 shadow-xl border rounded-xl">
@@ -99,6 +101,7 @@ const Register = () => {
                 </div>
             </main>
         </>
+        </AnimatedPage>
     )
 }
 
