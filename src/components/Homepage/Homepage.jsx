@@ -2,7 +2,8 @@ import React from 'react';
 import './Homepage.css';
 import { Link } from 'react-router-dom';
 import ChooseSection from '../../components/ChooseSection/ChooseSection';
-import StartCoursesImg from './nist.png';
+import Img from './nist.png';
+import Nba from './nba1.png';
 import ContactPage from '../../components/ContactPage/ContactPage';
 import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
 import BgVideo from '../../utils/IMG_7472.MOV';
@@ -60,26 +61,28 @@ function Home() {
         <ChooseSection />
       </div>
             
-      <div className="py-5 bg-light">
+      <div className="py-5 bg-black">
         <Container>
           <Row className="d-flex align-items-center justify-content-around">
             <Col lg={5}>
-              <h2 className="text-capitalize">2024 start courses</h2>
-              <p>
+              <h2 className="text-capitalize text-white">2024 start courses</h2>
+              <p className='text-white'>
               Our courses cover a wide range of topics, from business and technology to Bsc and personal development. Each course is crafted by industry experts and educators who are passionate about sharing their knowledge and expertise with you.
               </p>
               <Link to="/courses">
                 <button
                   type="button"
-                  className="btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0"
+                  className="btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0 text-white"
                 >
                   Learn More
                 </button>
               </Link>
             </Col>
-            <Col lg={5} className="mt-5 mt-lg-0">
-              <img src={StartCoursesImg} className="img-fluid" alt="" />
+            <Col lg={3} className="mt-5 mt-lg-0">
+              <img src={Img} className="img-fluid" alt="" />
+              <img src={Nba} className="img-fluid" alt="" />
             </Col>
+            
           </Row>
         </Container>
       </div>
