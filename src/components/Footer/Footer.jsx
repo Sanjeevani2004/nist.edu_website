@@ -14,7 +14,7 @@ const Footer = () => {
   const companyLinks = [
     { label: 'About Us', icon: FaRegArrowAltCircleRight, Link: 'about' },
     { label: 'Contact Us', icon: FaRegArrowAltCircleRight, Link: 'contact' },
-    { label: 'Courses', icon: FaRegArrowAltCircleRight, Link: 'course' },
+    { label: 'Courses', icon: FaRegArrowAltCircleRight, Link: 'courses' },
     { label: 'Privacy Policy', icon: FaRegArrowAltCircleRight, Link: 'privacy' },
     { label: 'FAQs', icon: FaRegArrowAltCircleRight, Link: 'faq' },
   ];
