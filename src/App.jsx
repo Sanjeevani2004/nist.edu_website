@@ -21,8 +21,6 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
-    
-    
     <BrowserRouter>
     <AuthProvider>
     <Analytics />

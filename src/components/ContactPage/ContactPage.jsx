@@ -18,13 +18,23 @@ function Contact() {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false); // New state for submission status
+  const [error, setError] = useState(''); // New state for error message
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const { postcode } = formData;
+
+    if (postcode && !/^\d{6}$/.test(postcode)) {
+      setError('Postcode should be 6 digits');
+      return;
+    }
+
     emailjs.sendForm('service_52a5i4o', 'template_yca2cnc', e.target, 'VFUDI7HBspB1bzmya')
       .then((result) => {
         console.log('Email sent successfully:', result.text);
@@ -37,7 +47,8 @@ function Contact() {
           postcode: '',
           message: ''
         });
-        setSubmitted(true); // Set submission status to true
+        setSubmitted(true);
+        setError('');
       })
       .catch((error) => {
         console.error('Email failed to send:', error.text);
@@ -89,11 +100,12 @@ function Contact() {
                 <Form.Control name='postcode' placeholder='Postcode' value={formData.postcode} onChange={handleChange} />
               </Col>
             </Row>
-
             <Form.Group className='mb-3 text-white'>
               <Form.Label>Your Message</Form.Label>
               <Form.Control name='message' as="textarea" rows={3} value={formData.message} onChange={handleChange} />
             </Form.Group>
+
+           {error && <p className="text-danger mt-3 text-white">{error}</p>} {/* Display error message */}
 
             <Button variant="danger btn-lg" type='submit'>Submit</Button>
 

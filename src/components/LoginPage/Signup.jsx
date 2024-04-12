@@ -19,8 +19,18 @@ const Register = () => {
     const onSubmit = async (e) => {
         e.preventDefault()
         if(!isRegistering) {
-            setIsRegistering(true)
-            await doCreateUserWithEmailAndPassword(email, password)
+            if (password !== confirmPassword)
+            {
+                setErrorMessage("Passwords do not match");
+                return;
+            }
+            setIsRegistering(true);
+            try {
+                await doCreateUserWithEmailAndPassword(email, password);
+            } catch (error) {
+                setErrorMessage(error.message);
+                setIsRegistering(false);
+            }
         }
     }
 
@@ -58,6 +68,7 @@ const Register = () => {
                             <label className="text-sm text-gray-400 font-bold">
                                 Password
                             </label>
+                            <p className='text-gray-400'>Enter 6 digits password.!</p>
                             <input
                                 disabled={isRegistering}
                                 type="password"
