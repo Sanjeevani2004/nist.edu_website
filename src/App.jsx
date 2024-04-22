@@ -14,7 +14,7 @@ import Privacy from './components/Footer/Privacy.jsx';
 import { AuthProvider } from "./Context/authContext/context.jsx";
 import Login from "./components/LoginPage/Login.jsx";
 import Signup from "./components/LoginPage/Signup.jsx";
-import Faculty from './components/LoginPage/faculty.jsx';
+import Faculty from './components/Faculty/faculty.jsx';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { AnimatePresence } from "framer-motion";

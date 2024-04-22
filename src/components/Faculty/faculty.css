@@ -1,0 +1,36 @@
+.faculty-container {
+    margin: 20px;
+  }
+  
+  .faculty-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .faculty-table th, .faculty-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .faculty-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .present-btn, .absent-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .present-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+  }
+  
+  .absent-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  

@@ -1,0 +1,32 @@
+.student-add-container {
+    margin: 20px;
+  }
+  
+  .student-add-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  .student-add-form input,
+  .student-add-form button {
+    padding: 8px;
+    border: 1px solid #e63b3b;
+    border-radius: 4px;
+  }
+  
+  .student-add-form input[type="text"],
+  .student-add-form input[type="number"] {
+    width: 100%;
+  }
+  
+  .student-add-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .student-add-form button:hover {
+    background-color: #0056b3;
+  }
+  
